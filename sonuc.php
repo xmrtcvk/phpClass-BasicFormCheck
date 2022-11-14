@@ -40,10 +40,12 @@
        function addDb(){
          if(self::getDurum() == true) {
            echo "Her şey yolunda! <br>";
-
-           foreach ($this->lastVal as $key => $value) {
+            
+           foreach ($this->lastVal as $key => $value) {  // Verileri yazdırdık
              echo $key." = ".$value."<br>";
            }
+           
+             // Veritabanı ekleme işlemlerini gerçekleştirebilirsiniz
          }
        }
     }
